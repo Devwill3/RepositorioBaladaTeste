@@ -2,6 +2,7 @@ let nome
 let idade
 let parImparIdade = "impar"
 let parImparAno = "impar"
+let parImpar
 
 nome = prompt("Digite seu nome:");
 idade = parseInt(prompt("Digite sua idade:"));
@@ -16,10 +17,10 @@ if(idade % 2 == 0){
 if(anoNasc % 2 == 0){
     parImparAno = "par"
 } 
-console.log("Olá " + nome + ", você tem " + idade + ", nasceu em " + anoNasc + " e de acordo com a informações recebidas, voce ")
+console.log("Olá " + nome + ", voce tem " + idade + " anos, que é um número " + parImparIdade + ", e nasceu em " + anoNasc + " que é um número " + parImparAno);
 
 if(idade >= 18){
-    console.log("Pode dar entrada na sua CNH!")
+    console.log("Você pode comprar bebidas alcoólicas.");
 }else{
-    console.log("Você ainda não tem idade suficiênte.")
+    console.log("Você não pode comprar bebidas alcoólicas.");
 }
